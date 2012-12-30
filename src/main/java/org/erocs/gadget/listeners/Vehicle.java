@@ -16,19 +16,6 @@ import org.bukkit.event.vehicle.VehicleMoveEvent;
 import org.bukkit.event.vehicle.VehicleUpdateEvent;
 
 public class Vehicle implements Listener {
-/*
-  public final List<Class> EVENTS = Arrays.asList(
-    VehicleBlockCollisionEvent,
-    VehicleCreateEvent,
-    VehicleDamageEvent,
-    VehicleDestroyEvent,
-    VehicleEnterEvent,
-    VehicleEntityCollisionEvent,
-    VehicleExitEvent,
-    VehicleMoveEvent,
-    VehicleUpdateEvent
-  );
-*/
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onVehicleBlockCollisionEvent(VehicleBlockCollisionEvent event) {

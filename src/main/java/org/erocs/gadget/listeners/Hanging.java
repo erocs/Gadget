@@ -10,13 +10,6 @@ import org.bukkit.event.hanging.HangingBreakEvent;
 import org.bukkit.event.hanging.HangingPlaceEvent;
 
 public class Hanging implements Listener {
-/*
-  public final List<Class> EVENTS = Arrays.asList(
-    HangingBreakByEntityEvent,
-    HangingBreakEvent,
-    HangingPlaceEvent
-  );
-*/
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onHangingBreakByEntityEvent(HangingBreakByEntityEvent event) {

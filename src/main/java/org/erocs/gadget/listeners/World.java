@@ -17,21 +17,6 @@ import org.bukkit.event.world.WorldSaveEvent;
 import org.bukkit.event.world.WorldUnloadEvent;
 
 public class World implements Listener {
-/*
-  public final List<Class> EVENTS = Arrays.asList(
-    ChunkLoadEvent,
-    ChunkPopulateEvent,
-    ChunkUnloadEvent,
-    PortalCreateEvent,
-    SpawnChangeEvent,
-    StructureGrowEvent,
-    WorldInitEvent,
-    WorldLoadEvent,
-    WorldSaveEvent,
-    WorldUnloadEvent
-  );
-*/
-
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onChunkLoadEvent(ChunkLoadEvent event) {

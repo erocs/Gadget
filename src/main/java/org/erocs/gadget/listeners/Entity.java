@@ -41,44 +41,6 @@ import org.bukkit.event.entity.SheepRegrowWoolEvent;
 import org.bukkit.event.entity.SlimeSplitEvent;
 
 public class Entity implements Listener {
-/*
-  public final List<Class> EVENTS = Arrays.asList(
-    CreatureSpawnEvent,
-    CreeperPowerEvent,
-    EntityBreakDoorEvent,
-    EntityChangeBlockEvent,
-    EntityCombustByBlockEvent,
-    EntityCombustByEntityEvent,
-    EntityCombustEvent,
-    EntityCreatePortalEvent,
-    EntityDamageByBlockEvent,
-    EntityDamageByEntityEvent,
-    EntityDamageEvent,
-    EntityDeathEvent,
-    EntityExplodeEvent,
-    EntityInteractEvent,
-    EntityPortalEnterEvent,
-    EntityRegainHealthEvent,
-    EntityShootBowEvent,
-    EntityTameEvent,
-    EntityTargetEvent,
-    EntityTargetLivingEntityEvent,
-    EntityTeleportEvent,
-    ExpBottleEvent,
-    ExplosionPrimeEvent,
-    FoodLevelChangeEvent,
-    ItemDespawnEvent,
-    ItemSpawnEvent,
-    PigZapEvent,
-    PlayerDeathEvent,
-    PotionSplashEvent,
-    ProjectileHitEvent,
-    ProjectileLaunchEvent,
-    SheepDyeWoolEvent,
-    SheepRegrowWoolEvent,
-    SlimeSplitEvent
-  );
-*/
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onCreatureSpawnEvent(CreatureSpawnEvent event) {

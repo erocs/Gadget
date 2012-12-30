@@ -10,13 +10,6 @@ import org.bukkit.event.weather.ThunderChangeEvent;
 import org.bukkit.event.weather.WeatherChangeEvent;
 
 public class Weather implements Listener {
-/*
-  public final List<Class> EVENTS = Arrays.asList(
-    LightningStrikeEvent,
-    ThunderChangeEvent,
-    WeatherChangeEvent
-  );
-*/
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onLightningStrikeEvent(LightningStrikeEvent event) {

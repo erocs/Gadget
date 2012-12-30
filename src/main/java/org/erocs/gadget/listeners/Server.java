@@ -15,18 +15,6 @@ import org.bukkit.event.server.ServiceRegisterEvent;
 import org.bukkit.event.server.ServiceUnregisterEvent;
 
 public class Server implements Listener {
-/*
-  public final List<Class> EVENTS = Arrays.asList(
-    MapInitializeEvent,
-    PluginDisableEvent,
-    PluginEnableEvent,
-    RemoteServerCommandEvent,
-    ServerCommandEvent,
-    ServerListPingEvent,
-    ServiceRegisterEvent,
-    ServiceUnregisterEvent
-  );
-*/
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onMapInitializeEvent(MapInitializeEvent event) {

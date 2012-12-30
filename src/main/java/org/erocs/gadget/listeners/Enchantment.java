@@ -9,12 +9,6 @@ import org.bukkit.event.enchantment.EnchantItemEvent;
 import org.bukkit.event.enchantment.PrepareItemEnchantEvent;
 
 public class Enchantment implements Listener {
-/*
-  public final List<Class> EVENTS = Arrays.asList(
-    EnchantItemEvent,
-    PrepareItemEnchantEvent
-  );
-*/
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onEnchantItemEvent(EnchantItemEvent event) {

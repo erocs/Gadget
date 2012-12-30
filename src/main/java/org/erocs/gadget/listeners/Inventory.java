@@ -17,20 +17,6 @@ import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.event.inventory.PrepareItemCraftEvent;
 
 public class Inventory implements Listener {
-/*
-  public final List<Class> EVENTS = Arrays.asList(
-    BrewEvent,
-    CraftItemEvent,
-    FurnaceBurnEvent,
-    FurnaceExtractEvent,
-    FurnaceSmeltEvent,
-    InventoryClickEvent,
-    InventoryCloseEvent,
-    InventoryEvent,
-    InventoryOpenEvent,
-    PrepareItemCraftEvent
-  );
-*/
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onBrewEvent(BrewEvent event) {

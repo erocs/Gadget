@@ -43,46 +43,6 @@ import org.bukkit.event.player.PlayerUnregisterChannelEvent;
 import org.bukkit.event.player.PlayerVelocityEvent;
 
 public class Player implements Listener {
-/*
-  public final List<Class> EVENTS = Arrays.asList(
-    AsyncPlayerChatEvent,
-    AsyncPlayerPreLoginEvent,
-    PlayerAnimationEvent,
-    PlayerBedEnterEvent,
-    PlayerBedLeaveEvent,
-    PlayerBucketEmptyEvent,
-    PlayerBucketFillEvent,
-    PlayerChangedWorldEvent,
-    PlayerChatTabCompleteEvent,
-    PlayerCommandPreprocessEvent,
-    PlayerDropItemEvent,
-    PlayerEggThrowEvent,
-    PlayerExpChangeEvent,
-    PlayerFishEvent,
-    PlayerGameModeChangeEvent,
-    PlayerInteractEntityEvent,
-    PlayerInteractEvent,
-    PlayerItemBreakEvent,
-    PlayerItemHeldEvent,
-    PlayerJoinEvent,
-    PlayerKickEvent,
-    PlayerLevelChangeEvent,
-    PlayerLoginEvent,
-    PlayerMoveEvent,
-    PlayerPickupItemEvent,
-    PlayerPortalEvent,
-    PlayerQuitEvent,
-    PlayerRegisterChannelEvent,
-    PlayerRespawnEvent,
-    PlayerShearEntityEvent,
-    PlayerTeleportEvent,
-    PlayerToggleFlightEvent,
-    PlayerToggleSneakEvent,
-    PlayerToggleSprintEvent,
-    PlayerUnregisterChannelEvent,
-    PlayerVelocityEvent
-  );
-*/
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onAsyncPlayerChatEvent(AsyncPlayerChatEvent event) {
