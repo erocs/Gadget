@@ -1,6 +1,6 @@
 name: Gadget
 main: org.erocs.gadget.Gadget
-version: 1.0.1
+version: 1.0.2
 description: Monitor Bukkit Events
 author: erocs
 database: false

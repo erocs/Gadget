@@ -13,7 +13,9 @@ import org.bukkit.event.inventory.FurnaceSmeltEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryEvent;
+import org.bukkit.event.inventory.InventoryMoveItemEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
+import org.bukkit.event.inventory.InventoryPickupItemEvent;
 import org.bukkit.event.inventory.PrepareItemCraftEvent;
 
 public class Inventory implements Listener {
@@ -59,7 +61,17 @@ public class Inventory implements Listener {
   }
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
+  public void onInventoryMoveItemEvent(InventoryMoveItemEvent event) {
+    Gadget.decodeEvent(event);
+  }
+
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onInventoryOpenEvent(InventoryOpenEvent event) {
+    Gadget.decodeEvent(event);
+  }
+
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
+  public void onInventoryPickupItemEvent(InventoryPickupItemEvent event) {
     Gadget.decodeEvent(event);
   }
 

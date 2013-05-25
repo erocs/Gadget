@@ -23,6 +23,7 @@ import org.bukkit.event.player.PlayerGameModeChangeEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemBreakEvent;
+import org.bukkit.event.player.PlayerItemConsumeEvent;
 import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerKickEvent;
@@ -131,6 +132,11 @@ public class Player implements Listener {
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onPlayerItemBreakEvent(PlayerItemBreakEvent event) {
+    Gadget.decodeEvent(event);
+  }
+
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
+  public void onPlayerItemConsumeEvent(PlayerItemConsumeEvent event) {
     Gadget.decodeEvent(event);
   }
 
