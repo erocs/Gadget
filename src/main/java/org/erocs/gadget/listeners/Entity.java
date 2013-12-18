@@ -28,13 +28,16 @@ import org.bukkit.event.entity.EntityTameEvent;
 import org.bukkit.event.entity.EntityTargetEvent;
 import org.bukkit.event.entity.EntityTargetLivingEntityEvent;
 import org.bukkit.event.entity.EntityTeleportEvent;
+import org.bukkit.event.entity.EntityUnleashEvent;
 import org.bukkit.event.entity.ExpBottleEvent;
 import org.bukkit.event.entity.ExplosionPrimeEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
+import org.bukkit.event.entity.HorseJumpEvent;
 import org.bukkit.event.entity.ItemDespawnEvent;
 import org.bukkit.event.entity.ItemSpawnEvent;
 import org.bukkit.event.entity.PigZapEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.entity.PlayerLeashEntityEvent;
 import org.bukkit.event.entity.PotionSplashEvent;
 import org.bukkit.event.entity.ProjectileHitEvent;
 import org.bukkit.event.entity.ProjectileLaunchEvent;
@@ -160,6 +163,11 @@ public class Entity implements Listener {
   }
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
+  public void onEntityUnleashEvent(EntityUnleashEvent event) {
+    Gadget.decodeEvent(event);
+  }
+
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onExpBottleEvent(ExpBottleEvent event) {
     Gadget.decodeEvent(event);
   }
@@ -171,6 +179,11 @@ public class Entity implements Listener {
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onFoodLevelChangeEvent(FoodLevelChangeEvent event) {
+    Gadget.decodeEvent(event);
+  }
+
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
+  public void onHorseJumpEvent(HorseJumpEvent event) {
     Gadget.decodeEvent(event);
   }
 
@@ -191,6 +204,11 @@ public class Entity implements Listener {
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onPlayerDeathEvent(PlayerDeathEvent event) {
+    Gadget.decodeEvent(event);
+  }
+
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
+  public void onPlayerLeashEntityEvent(PlayerLeashEntityEvent event) {
     Gadget.decodeEvent(event);
   }
 

@@ -16,6 +16,7 @@ import org.bukkit.event.player.PlayerChangedWorldEvent;
 import org.bukkit.event.player.PlayerChatTabCompleteEvent;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
+import org.bukkit.event.player.PlayerEditBookEvent;
 import org.bukkit.event.player.PlayerEggThrowEvent;
 import org.bukkit.event.player.PlayerExpChangeEvent;
 import org.bukkit.event.player.PlayerFishEvent;
@@ -40,6 +41,7 @@ import org.bukkit.event.player.PlayerTeleportEvent;
 import org.bukkit.event.player.PlayerToggleFlightEvent;
 import org.bukkit.event.player.PlayerToggleSneakEvent;
 import org.bukkit.event.player.PlayerToggleSprintEvent;
+import org.bukkit.event.player.PlayerUnleashEntityEvent;
 import org.bukkit.event.player.PlayerUnregisterChannelEvent;
 import org.bukkit.event.player.PlayerVelocityEvent;
 
@@ -97,6 +99,11 @@ public class Player implements Listener {
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onPlayerDropItemEvent(PlayerDropItemEvent event) {
+    Gadget.decodeEvent(event);
+  }
+
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
+  public void onPlayerEditBookEvent(PlayerEditBookEvent event) {
     Gadget.decodeEvent(event);
   }
 
@@ -217,6 +224,11 @@ public class Player implements Listener {
 
   @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
   public void onPlayerToggleSprintEvent(PlayerToggleSprintEvent event) {
+    Gadget.decodeEvent(event);
+  }
+
+  @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
+  public void onPlayerUnleashEntityEvent(PlayerUnleashEntityEvent event) {
     Gadget.decodeEvent(event);
   }
 
